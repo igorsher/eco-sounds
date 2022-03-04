@@ -1,0 +1,241 @@
+
+html {
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+}
+
+/*heder*/
+
+.heder {
+    
+    
+}
+.heder-container img {
+    /*border: 5px solid rgb(109, 128, 0); */
+   
+}
+.heder-container img:hover {
+    /*border: 5px solid rgb(109, 128, 0); */
+    cursor: pointer; 
+    filter: invert(23%) sepia(39%) saturate(276%) hue-rotate(7deg) brightness(86%) contrast(81%);
+}
+
+.heder-container  {
+    /*border: 5px solid rgb(109, 128, 0); */
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-list {
+    /*border: 5px solid rgb(128, 0, 6); */
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    list-style: none; 
+    width: 600px;
+
+}
+.nav-item:hover {
+    color:#BDAE82;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+.solovey.fonSolovey {
+color: #BDAE82;
+}
+.drozd.fonDrozd {
+    color: #BDAE82;
+}
+.forest.fonForest {
+    color: #BDAE82;
+}
+.javoronok.fonJavoronok {
+    color: #BDAE82;
+}
+.slavka.fonSlavka {
+    color: #BDAE82;
+}
+
+/*main*/
+
+main {
+    background: url(./assets/img/solovey.jpg) 0 0/cover no-repeat;
+   /* border: 5px solid green;*/
+    flex: 1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main.fonSolovey {
+    background: url(./assets/img/solovey.jpg) 0 0/cover no-repeat;
+   /* border: 5px solid green;*/
+    flex: 1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main.fonDrozd {
+    background: url(./assets/img/drozd.jpg) 0 0/cover no-repeat;
+   /* border: 5px solid green;*/
+    flex: 1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main.fonForest {
+    background: url(./assets/img/forest.jpg) 0 0/cover no-repeat;
+   /* border: 5px solid green;*/
+    flex: 1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main.fonJavoronok {
+    background: url(./assets/img/javoronok.jpg) 0 0/cover no-repeat;
+   /* border: 5px solid green;*/
+    flex: 1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+main.fonSlavka {
+    background: url(./assets/img/slavka.jpg) 0 0/cover no-repeat;
+   /* border: 5px solid green;*/
+    flex: 1;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.main-container {
+   /* border: 5px solid rgb(18, 219, 35);*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.player-button {
+     /*border: 5px solid rgb(128, 0, 6); */
+    background: url(./assets/svg/play.svg) 0 0/80px 80px no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer; 
+    padding: center;
+}
+.player-button.pause {
+   
+   background: url(./assets/svg/pause.svg) 0 0/80px 80px no-repeat;
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   cursor: pointer; 
+   padding: center;
+}
+
+.player-button:hover {
+    filter: invert(23%) sepia(39%) saturate(276%) hue-rotate(7deg) brightness(86%) contrast(81%);
+    transition: 0.3s;
+}
+
+.play-prev {
+     /*border: 5px solid rgb(128, 0, 6); */
+    background: url(./assets/svg/arrow.svg) 0px 0px/40px 40px no-repeat;
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg) translate(50px, 7px);
+    cursor: pointer; 
+    filter: invert(93%) sepia(7%) saturate(1969%) hue-rotate(345deg) brightness(84%) contrast(72%);
+      
+}
+.play-prev:hover,
+.play-next:hover {
+    filter: invert(23%) sepia(39%) saturate(276%) hue-rotate(7deg) brightness(86%) contrast(81%);
+    transition: 0.3s; 
+}
+.play-prev.pre {
+    /* border: 5px solid rgb(128, 0, 6); */
+    background: url(./assets/svg/arrow.svg) 0px 0px/35px 35px no-repeat;
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg) translate(50px, 7px);
+    cursor: pointer; 
+    filter: invert(86%) sepia(42%) saturate(2631%) hue-rotate(356deg) brightness(99%) contrast(91%);
+ }
+.play-next {
+   /* border: 5px solid rgb(128, 0, 6); */
+   background: url(./assets/svg/arrow.svg) 0px 0px/40px 40px no-repeat;
+   width: 50px;
+   height: 50px;
+   transform: rotate(0deg) translate(50px, 5px);
+   cursor: pointer; 
+   filter: invert(93%) sepia(7%) saturate(1969%) hue-rotate(345deg) brightness(84%) contrast(72%);
+   
+}
+.play-next.next {
+    /* border: 5px solid rgb(128, 0, 6); */
+    background: url(./assets/svg/arrow.svg) 2px 2px/35px 35px no-repeat;
+    width: 50px;
+    height: 50px;
+    transform: rotate(0deg) translate(50px, 5px);
+    cursor: pointer; 
+    filter: invert(86%) sepia(42%) saturate(2631%) hue-rotate(356deg) brightness(99%) contrast(91%);
+ }
+
+
+
+
+
+/*footer*/
+
+footer {
+   /* border: 5px solid rgb(128, 0, 6); */
+    background: #000;
+
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list {
+   /* border: 5px solid rgb(62, 128, 0);*/
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.footer-list li {
+    /*border: 5px solid rgb(62, 128, 0);*/
+    padding: 0px 10px;
+     
+ }
+.img-c {
+    height: 20px;
+}
+.img-rss {
+    height: 60px;
+    /*border: 5px solid rgb(0, 77, 128);*/   
+} 
+.footer-item a:hover {
+    filter: invert(23%) sepia(39%) saturate(276%) hue-rotate(7deg) brightness(86%) contrast(81%);
+    transition: 0.3s;
+    cursor: pointer;
+    color: yellow;
+}
+.link-rss:hover {
+    filter: invert(23%) sepia(39%) saturate(276%) hue-rotate(7deg) brightness(86%) contrast(81%);
+    transition: 0.3s;
+    
+}
